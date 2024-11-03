@@ -48,6 +48,110 @@ select {
 
 body {
   min-height: 100vh;
-  font-size: 16px;
+  font-family: var(--ff-work-sans);
+  font-size: 1rem;
+  font-weight: var(--fw-400);
+  color: var(--clr-dark-purple);
   line-height: 1.5;
+  background: var(--clr-light-pink) url(../images/background-pattern-mobile.svg)
+    repeat-x top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  max-width: 20.3125rem;
+  background-color: var(--clr-white);
+  border-radius: 0.625rem;
+  padding: 1.5625rem;
+  box-shadow: 0 0.5625rem 2.5rem -0.8125rem hsla(292, 42%, 14%, 0.2);
+}
+
+.accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 1.5625rem;
+  margin-bottom: 1.25rem;
+}
+
+.accordion-title img {
+  width: 1.5rem;
+  height: auto;
+}
+
+.accordion-title p {
+  font-size: 2rem;
+  font-weight: var(--fw-700);
+}
+
+.accordion-main {
+  list-style: none;
+}
+
+.accordion-main li:not(:last-child) {
+  border-bottom: 0.0625rem solid var(--clr-light-pink);
+}
+
+.accordion-btn {
+  font-weight: var(--fw-600);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  text-wrap: balance;
+  width: 100%;
+  transition: 0.2s;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.accordion-btn:hover {
+  color: hsl(281, 83%, 54%);
+}
+
+.accordion-main li:last-child .accordion-btn {
+  margin-bottom: 0;
+}
+
+.accordion-answer p {
+  font-size: 0.875rem;
+  color: var(--clr-grayish-purple);
+  margin-bottom: 1.25rem;
+}
+
+.accordion-main li:last-child .accordion-answer p {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 48rem) {
+  body {
+    background-image: url(../images/background-pattern-desktop.svg);
+  }
+
+  .accordion-title img {
+    width: 2.5rem;
+  }
+
+  .accordion-title p {
+    font-size: 3.25rem;
+  }
+
+  .accordion {
+    max-width: 37.5rem;
+    padding: 2.1875rem;
+  }
+
+  .accordion-btn {
+    font-size: 1.125rem;
+    text-wrap: initial;
+  }
+
+  .accordion-answer p {
+    font-size: 1rem;
+  }
 }

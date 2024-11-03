@@ -12,5 +12,86 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="accordion">
+        <div class="accordion-title">
+          <img src="images/icon-star.svg" alt="" />
+          <p>FAQs</p>
+        </div>
+        <ul class="accordion-main">
+          <li>
+            <button
+              class="accordion-btn js-accordion-btn"
+              aria-expanded="true"
+              aria-controls="answer1"
+            >
+              What is Frontend Mentor, and how will it help me?
+              <img src="images/icon-minus.svg" alt="" aria-hidden="true" />
+            </button>
+            <div class="accordion-answer" id="answer1">
+              <p>
+                Frontend Mentor offers realistic coding challenges to help
+                developers improve their frontend coding skills with projects in
+                HTML, CSS, and JavaScript. It's suitable for all levels and
+                ideal for portfolio building.
+              </p>
+            </div>
+          </li>
+          <li>
+            <button
+              class="accordion-btn js-accordion-btn"
+              aria-expanded="false"
+              aria-controls="answer2"
+            >
+              Is Frontend Mentor free?
+              <img src="images/icon-plus.svg" alt="" aria-hidden="true" />
+            </button>
+            <div class="accordion-answer" id="answer2" hidden>
+              <p>
+                Yes, Frontend Mentor offers both free and premium coding
+                challenges, with the free option providing access to a range of
+                projects suitable for all skill levels.
+              </p>
+            </div>
+          </li>
+          <li>
+            <button
+              class="accordion-btn js-accordion-btn"
+              aria-expanded="false"
+              aria-controls="answer3"
+            >
+              Can I use Frontend Mentor projects in my portfolio?
+              <img src="images/icon-plus.svg" alt="" aria-hidden="true" />
+            </button>
+            <div class="accordion-answer" id="answer3" hidden>
+              <p>
+                Yes, you can use projects completed on Frontend Mentor in your
+                portfolio. It's an excellent way to showcase your skills to
+                potential employers!
+              </p>
+            </div>
+          </li>
+          <li>
+            <button
+              class="accordion-btn js-accordion-btn"
+              aria-expanded="false"
+              aria-controls="answer4"
+            >
+              How can I get help if I'm stuck on a Frontend Mentor challenge?
+              <img src="images/icon-plus.svg" alt="" aria-hidden="true" />
+            </button>
+            <div class="accordion-answer" id="answer4" hidden>
+              <p>
+                The best place to get help is inside Frontend Mentor's Discord
+                community. There's a help channel where you can ask questions
+                and seek support from other community members.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>
